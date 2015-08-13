@@ -69,11 +69,13 @@ public abstract class L4ModificationInstruction implements Instruction {
     public static final class ModTransportPortInstruction extends L4ModificationInstruction {
 
         private final L4SubType subtype;
-        private final short port;
+        private final int port;
+        private static final int MASK = 0xffff;
 
-        public ModTransportPortInstruction(L4SubType subtype, short port) {
+
+        public ModTransportPortInstruction(L4SubType subtype, int port) {
             this.subtype = subtype;
-            this.port = port;
+            this.port = port & MASK;
         }
 
         @Override
@@ -81,7 +83,7 @@ public abstract class L4ModificationInstruction implements Instruction {
             return this.subtype;
         }
 
-        public short port() {
+        public int port() {
             return this.port;
         }
 

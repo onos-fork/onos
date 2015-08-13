@@ -324,7 +324,7 @@ public interface TrafficTreatment {
          * @param port a port number
          * @return a treatment builder
          */
-        Builder setTcpSrc(short port);
+        Builder setTcpSrc(int port);
 
         /**
          * Sets the dst TCP port.
@@ -332,7 +332,7 @@ public interface TrafficTreatment {
          * @param port a port number
          * @return a treatment builder
          */
-        Builder setTcpDst(short port);
+        Builder setTcpDst(int port);
 
         /**
          * Sets the src UDP port.
@@ -340,7 +340,7 @@ public interface TrafficTreatment {
          * @param port a port number
          * @return a treatment builder
          */
-        Builder setUdpSrc(short port);
+        Builder setUdpSrc(int port);
 
         /**
          * Sets the dst UDP port.
@@ -348,7 +348,7 @@ public interface TrafficTreatment {
          * @param port a port number
          * @return a treatment builder
          */
-        Builder setUdpDst(short port);
+        Builder setUdpDst(int port);
 
         /**
          * Builds an immutable traffic treatment descriptor.

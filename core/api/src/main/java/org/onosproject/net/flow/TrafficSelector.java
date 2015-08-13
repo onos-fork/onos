@@ -170,7 +170,7 @@ public interface TrafficSelector {
          * @param tcpPort a TCP source port number
          * @return a selection builder
          */
-        Builder matchTcpSrc(short tcpPort);
+        Builder matchTcpSrc(int tcpPort);
 
         /**
          * Matches a TCP destination port number.
@@ -178,7 +178,7 @@ public interface TrafficSelector {
          * @param tcpPort a TCP destination port number
          * @return a selection builder
          */
-        Builder matchTcpDst(short tcpPort);
+        Builder matchTcpDst(int tcpPort);
 
         /**
          * Matches an UDP source port number.
@@ -186,7 +186,7 @@ public interface TrafficSelector {
          * @param udpPort an UDP source port number
          * @return a selection builder
          */
-        Builder matchUdpSrc(short udpPort);
+        Builder matchUdpSrc(int udpPort);
 
         /**
          * Matches an UDP destination port number.
@@ -194,7 +194,7 @@ public interface TrafficSelector {
          * @param udpPort an UDP destination port number
          * @return a selection builder
          */
-        Builder matchUdpDst(short udpPort);
+        Builder matchUdpDst(int udpPort);
 
         /**
          * Matches a SCTP source port number.
@@ -202,7 +202,7 @@ public interface TrafficSelector {
          * @param sctpPort a SCTP source port number
          * @return a selection builder
          */
-        Builder matchSctpSrc(short sctpPort);
+        Builder matchSctpSrc(int sctpPort);
 
         /**
          * Matches a SCTP destination port number.
@@ -210,7 +210,7 @@ public interface TrafficSelector {
          * @param sctpPort a SCTP destination port number
          * @return a selection builder
          */
-        Builder matchSctpDst(short sctpPort);
+        Builder matchSctpDst(int sctpPort);
 
         /**
          * Matches an ICMP type.

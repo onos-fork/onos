@@ -391,22 +391,22 @@ public final class DefaultTrafficTreatment implements TrafficTreatment {
         }
 
         @Override
-        public TrafficTreatment.Builder setTcpSrc(short port) {
+        public TrafficTreatment.Builder setTcpSrc(int port) {
             return add(Instructions.modTcpSrc(port));
         }
 
         @Override
-        public TrafficTreatment.Builder setTcpDst(short port) {
+        public TrafficTreatment.Builder setTcpDst(int port) {
             return add(Instructions.modTcpDst(port));
         }
 
         @Override
-        public TrafficTreatment.Builder setUdpSrc(short port) {
+        public TrafficTreatment.Builder setUdpSrc(int port) {
             return add(Instructions.modUdpSrc(port));
         }
 
         @Override
-        public TrafficTreatment.Builder setUdpDst(short port) {
+        public TrafficTreatment.Builder setUdpDst(int port) {
             return add(Instructions.modUdpDst(port));
         }
 

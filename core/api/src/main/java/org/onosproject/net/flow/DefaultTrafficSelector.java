@@ -209,32 +209,32 @@ public final class DefaultTrafficSelector implements TrafficSelector {
         }
 
         @Override
-        public Builder matchTcpSrc(short tcpPort) {
+        public Builder matchTcpSrc(int tcpPort) {
             return add(Criteria.matchTcpSrc(tcpPort));
         }
 
         @Override
-        public Builder matchTcpDst(short tcpPort) {
+        public Builder matchTcpDst(int tcpPort) {
             return add(Criteria.matchTcpDst(tcpPort));
         }
 
         @Override
-        public Builder matchUdpSrc(short udpPort) {
+        public Builder matchUdpSrc(int udpPort) {
             return add(Criteria.matchUdpSrc(udpPort));
         }
 
         @Override
-        public Builder matchUdpDst(short udpPort) {
+        public Builder matchUdpDst(int udpPort) {
             return add(Criteria.matchUdpDst(udpPort));
         }
 
         @Override
-        public Builder matchSctpSrc(short sctpPort) {
+        public Builder matchSctpSrc(int sctpPort) {
             return add(Criteria.matchSctpSrc(sctpPort));
         }
 
         @Override
-        public Builder matchSctpDst(short sctpPort) {
+        public Builder matchSctpDst(int sctpPort) {
             return add(Criteria.matchSctpDst(sctpPort));
         }
 

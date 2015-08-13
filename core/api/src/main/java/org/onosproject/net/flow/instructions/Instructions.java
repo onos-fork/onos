@@ -368,7 +368,7 @@ public final class Instructions {
      * @param port the TCP port number to modify to
      * @return a L4 modification
      */
-    public static L4ModificationInstruction modTcpSrc(short port) {
+    public static L4ModificationInstruction modTcpSrc(int port) {
        checkNotNull(port, "Src TCP port cannot be null");
        return new ModTransportPortInstruction(L4SubType.TCP_SRC, port);
     }
@@ -379,7 +379,7 @@ public final class Instructions {
      * @param port the TCP port number to modify to
      * @return a L4 modification
      */
-    public static L4ModificationInstruction modTcpDst(short port) {
+    public static L4ModificationInstruction modTcpDst(int port) {
         checkNotNull(port, "Dst TCP port cannot be null");
         return new ModTransportPortInstruction(L4SubType.TCP_DST, port);
     }
@@ -390,7 +390,7 @@ public final class Instructions {
      * @param port the UDP port number to modify to
      * @return a L4 modification
      */
-    public static L4ModificationInstruction modUdpSrc(short port) {
+    public static L4ModificationInstruction modUdpSrc(int port) {
         checkNotNull(port, "Src UDP port cannot be null");
         return new ModTransportPortInstruction(L4SubType.UDP_SRC, port);
     }
@@ -401,7 +401,7 @@ public final class Instructions {
      * @param port the UDP port number to modify to
      * @return a L4 modification
      */
-    public static L4ModificationInstruction modUdpDst(short port) {
+    public static L4ModificationInstruction modUdpDst(int port) {
         checkNotNull(port, "Dst UDP port cannot be null");
         return new ModTransportPortInstruction(L4SubType.UDP_DST, port);
     }
